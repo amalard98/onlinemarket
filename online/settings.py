@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-^r&d6r@=^xcx@f!6=#6c+)k(d6&z68u1@zj9gervg9vo3_#%u%
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '10.0.2.2',
-    '127.0.0.1',
+    'online-market-amal.herokuapp.com'
 ]
 
 
