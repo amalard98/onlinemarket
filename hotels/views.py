@@ -384,7 +384,7 @@ class DeleteSingleCart(APIView):
 
     def post(self, request):
         try:
-            cart_obj = Cart.objects.filter(multipleorder = False).filter(isComplete = False).last()
+            cart_obj = Cart.objects.filter(user=request.user).filter(multipleorder = False).filter(isComplete = False).all()
             cart_obj.delete()
             response_msg = {'error': False}
         except:
